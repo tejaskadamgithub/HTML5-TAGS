@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 tags</title>
+    <!--link tag-->
+    <link rel="stylesheet" href="default.css">
+</head>
+<body>
+
+    <!--a tags-->
+
+    <a href="https://skillvertex.in/">Skill Vertex</a>
+
+   <!--abbr tags -->
+   <p>The <abbr title="HyperTextMarkupLanguage">HTML</abbr> is the publishing language of the World Wide Web.</p>
+
+   <!--address tags-->
+   <footer>
+    <address>
+        <p><a href="https://skillvertex.in/reach-us/">Contact Skill Vertex</a></p>
+    </address>
+   </footer>
+   <hr>
+
+   <!--textarea-->
+   <b>Example of textarea</b>
+   <form>
+    <p>Leave your Comment: 
+        <textarea cols="60" rows="5">write here...</textarea>
+    </p>
+</form>
+<hr>
+    <!--time tag-->
+    <b>example of time tag</b>
+    <p>The library opens at <time>8:30 am</time> every morning.</p>
+    <p>The concert took place on <time datetime="2016-12-31 12:00">31 Dec</time>.</p>
+    <hr>
+
+   <!--area tags-->
+   <h1>Click on a shape to see how it works:</h1>
+   <img src="./assests/CP.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+   <map name="workmap">
+     <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.html">
+   </map>
+   <hr>
+
+   <!--article tags-->
+   <article>
+    <h1>Introduction to HTML</h1>
+    <p>HTML is a markup language that is used for creating web pages.</p>
+   </article>
+   <hr>
+
+   <!--aside, q tags-->
+   <b>Example of aside, q tags</b>
+   <aside>
+    <h1>Apollo 13 Facts</h1>
+    <p>Apollo 13 was the seventh manned mission in the <q>American Apollo space program</q> and the third intended to land on the Moon.</p>
+   </aside>
+   <hr>
+
+   <!--audio tags-->
+   <audio controls="controls">
+    <source src="./assests/birds.mp3" type="audio/mpeg">
+    Your browser does not support the HTML5 Audio element.
+  </audio>
+  <hr>
+
+  <!--b tags-->
+  <p>This <b>sentence</b> contains some <b>bold</b> words.</p>
+   <p>Here are <b>some</b> more <b>bold</b> words.</p>
+   <hr>
+
+   <!--base tag-->
+   <h1>Example of HTML base tag</h1>
+    <base href="https://www.tutorialrepublic.com/">
+    <p>Learn <a href="css-tutorial/">CSS</a>.</p>
+    <hr>
+
+    <!--bdi tags-->
+    <p dir="ltr">This arabic word <bdi>ARABIC_PLACEHOLDER</bdi> is automatically displayed right-to-left.</p>
+    <hr>
+    
+    <!--bod tags-->
+    <p>The sequence "1-2-3-4-5" was reversed as: <bdo dir="rtl">1-2-3-4-5</bdo></p>
+    <hr>
+
+    <!--blockquote tag-->
+    <blockquote>
+        <p>This is an example of a long quotation.</p>
+    </blockquote>
+    <hr>
+    <!--br tags-->
+    <p>This paragraph contains <br>a line break.</p>
+   <p>This paragraph contains <br>multiple <br>line breaks.</p>
+   <hr>
+
+   <!--button tags-->  
+    <p>
+        <p>firstname</p><input type="text" name="firstname">
+        <button type="submit" value="Submit">Submit</button>
+        <button type="reset" value="Reset">Reset</button>
+    </p>
+    <hr>
+
+    <!--canvas tags-->
+    <h1>The canvas element</h1>
+        <canvas id="myCanvas">Your browser does not support the canvas tag.</canvas>
+
+            <script>
+                var c = document.getElementById("myCanvas");
+                var ctx = c.getContext("2d");
+                ctx.fillStyle = "#FF0000";
+                ctx.fillRect(0, 0, 80, 100);
+            </script>
+   <hr>
+
+   <!--caption tag-->
+   <h1>The caption element</h1>
+    <table>
+  <caption>Monthly savings</caption>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$50</td>
+  </tr>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+    }
+    </style>
+</table>
+<hr>
+<!--cite tags-->
+<p>My favorite movie is <cite>star wars</cite>.</p>
+<p>My another favorite movie is <cite>harry potter</cite>.</p>
+<hr>
+
+<!--code tags-->
+<p>Regular text. <code>computer code</code> Regular text.</p>
+<hr>
+
+<!--col tags & colgroup tag-->
+<h1>The col element</h1>
+
+<table>
+  <colgroup>
+    <col span="2" style="background-color:red">
+    <col style="background-color:yellow">
+  </colgroup>
+  <tr>
+    <th>ISBN</th>
+    <th>Title</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td>3476896</td>
+    <td>My first HTML</td>
+    <td>$53</td>
+  </tr>
+  <tr>
+    <td>5869207</td>
+    <td>My first CSS</td>
+    <td>$49</td>
+  </tr>
+</table>
+<hr>
+
+<!--data tags-->
+<p>New Products</p>
+<ul>
+    <li><data value="204">Green Tea</data></li>
+    <li><data value="205">Tomato Ketchup</data></li>
+    <li><data value="206">Roasted Coffee Beans</data></li>
+</ul>
+<hr>
+<!--datalist-->
+<p>Enter your favorite browser name:</p>
+<input type="text" list="browsers">
+<datalist id="browsers">
+    <option value="Firefox">
+    <option value="Chrome">    
+    <option value="Internet Explorer">
+    <option value="Opera">
+    <option value="Safari">
+</datalist>
+<hr>
+
+<!--dd, dt, dl tags-->
+<h1>The dl, dd, and dt elements</h1>
+<dl>
+    <dt>Coffee</dt>
+    <dd>Black hot drink</dd>
+    <dt>Milk</dt>
+    <dd>White cold drink</dd>
+  </dl>
+  <hr>
+  <!--del, ins,li tag-->
+  <h5>Del, ins, li tag elements</h5>
+    <ul>
+        <li>Buy some cookies</li>
+        <li><ins> some cleaning</ins></li>
+        <li><del>Relaxation time</del></li>
+        <li><u>underlined tag</u></li>
+    </ul>
+    <hr>
+
+    <!--details, summary tags-->
+    <p>Details, Summary tags</p>
+
+    <details>
+        <summary>What is HTML?</summary>
+        <p>HTML is a markup language for describing the structure of web pages.</p>
+    </details>
+    <hr>
+
+    <!--dfn, kbd tags-->
+    <b>dfn, kbd tags elements</b>
+    <p>The <dfn title="Hyper Text Markup Language">HTML</dfn> is the "<kbd>publishing language</kbd>" of the World Wide Web.</p>
+    <hr>  
+
+    <!--div tags-->
+    <p>Div tags</p>
+    <div class="myDiv">
+    <h2>This is a heading in a div element</h2>
+    <p>This is some text in a div element.</p>
+    </div>
+    <style>
+        .myDiv {
+          border: 5px outset red;
+          background-color: lightblue;
+          text-align: center;
+        }
+        </style>
+
+        <hr>
+
+    <!--em tags-->
+    <b>em tags</b>
+    <p>This is an <em>important point</em> to consider.</p>
+
+    <hr>
+    
+    <!--embed tag-->
+    <b>embed tags</b>
+    <h1>The embed element</h1>
+    <embed type="video/webm" src="https://www.youtube.com/embed/mkjwxmcdb0E" width="400" height="300">
+
+        <hr>
+
+    <!--fieldset, form tags-->
+    <b>Example of HTML fieldset and form tag</b>
+    <form action="http://www.example.com/" method="post">
+        <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" name="gender" value="male" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="female" id="female">
+            <label for="female">Female</label>
+        </fieldset>
+    </form>
+    <hr>
+
+    <!--figcaption, figure,tag-->
+    <b>Example of HTML figcaption, figure Tag</b>
+    <figure>
+        <img src="https://www.w3schools.com/tags/pic_trulli.jpg" alt="Computer" width="400" height="379">
+        <figcaption>Trulli, Puglia, Italy</figcaption>
+    </figure>
+    <hr>
+
+    <!--footer tag-->
+    <b>example of footer tag</b>
+    <footer>
+		<nav>
+			<p>
+				<a href="https://skillvertex.in/policies/">Terms & Conditions</a> |
+				<a href="https://skillvertex.in/privacy-policy/">Privacy Policy</a>
+			</p>
+		</nav>
+		<p>Copyright &copy; 2014 Tutorial Republic</p>
+	</footer>
+    <hr>
+    
+    <!--Example of h tags-->
+
+    <b>example of h tags</b>
+    <h1>This is h1 tag</h1>
+    <h2>This is h2 tag</h2>
+    <h3>This is h3 tag</h3>
+    <h4>This is h4 tag</h4>
+    <h5>This is h5 tag</h5>
+    <h6>This is h6 tag</h6>
+
+    <hr>
+
+    <!--i tag-->
+    <b>example of i tags elements</b>
+    <p>Here is some <i>italic</i> text.</p>
+
+    <hr>
+    <!--iframe tags-->
+    <p>Example of iframe element</p>
+     <iframe src="https://skillvertex.in/" style="border:none;" title="Iframe Example " width="800px" height="200px"> Iframe example</iframe>
+
+    <hr>
+
+    <!--keygen tags-->
+    <b>Example of keygen tags element</b>
+    <form action="process-key.php" method="post">
+        <label>Username: <input type="text" name="username"></label>
+        <label>Encryption: <keygen name="key"></label>
+        <input type="submit" value="Submit">
+    </form>
+    <hr>
+
+    <!--label tags-->
+    <b>example of label tags element</b>    
+    <form>
+    <input type="radio" name="gender" value="male" id="male">
+    <label for="male">Male</label>
+    <input type="radio" name="gender" value="female" id="female">
+    <label for="female">Female</label>
+    </form>
+    <hr>
+
+    <!--mark tags-->
+    <b>example of mark tag element</b>
+    <p>This is some <mark>highlighted</mark> text.</p>
+    <hr>
+
+    <!--header, nav tags-->
+    <b>Example of header, nav tag elements</b>
+    <header>
+		<h1>Tutorial Republic</h1>
+		<nav>
+			<p>
+                <a href="https://skillvertex.in/">Home</a> | 
+                <a href="https://skillvertex.in/about-us/">About</a> | 
+                <a href="https://skillvertex.in/reach-us/">Contact</a>
+            </p>
+		</nav>
+	</header>
+    <hr>
+
+    <!--meter tag-->
+    <b>Example of meter element</b>
+    <p>Disk Usage: <meter value="0.8">80%</meter></p>
+	<p>Total Score: <meter value="6" min="0" max="10">6 out of 10</meter></p>
+	<p>Pollution Level: <meter low="60" high="80" max="100" value="85">Very High</meter></p>
+    <hr>
+
+    <!--object tag-->
+    <p>example of object tag</p>
+    <object data="https://www.youtube.com/embed/mkjwxmcdb0E" width="400" height="300"></object>
+    <hr>
+
+    <!---ol tags-->
+    <b>HTML Ordered List</b>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <hr>
+
+    <!--optgroup, option, select tag-->
+    <b>optgroup, optiontag elements</b>
+    <select>
+        <optgroup label="Sports cars">
+            <option value="ferrari">Ferrari</option>
+            <option value="lamborghini">Lamborghini</option>
+        </optgroup>
+        <optgroup label="Luxury cars">
+            <option value="mercedes">Mercedes</option>
+            <option value="bentley">Bentley</option>
+        </optgroup>
+    </select>
+    <hr>
+
+    <!--picture tags-->
+    <p>example of picture tag element</p>
+    <picture>
+        <source media="(min-width: 1000px)" srcset="https://cdn.pixabay.com/photo/2015/10/01/17/17/car-967387_960_720.png">
+        <img src="images/banner.png" alt="Banner">
+          
+       
+    </picture>
+    <hr>
+
+    <!--pre tags-->
+    <b>Example of pre tags</b>
+    <pre>
+        The pre
+            element preserves      spaces,
+                line-breaks, tabs...
+        </pre>
+    <hr>
+
+    <!--progress-->
+    <b>Example of progress tag</b>
+    <h2>Task Progress</h2>
+	<p>Progress: <progress id="bar" value="50" max="100"><span>0</span>%</progress></p>
+    <hr>
+
+    <!--ruby, rp tags-->
+    <b>Example of ruby, rp tag</b>
+    <ruby>
+    	&#28450; <rp>(</rp><rt>Kan</rt><rp>)</rp>
+        &#23383; <rp>(</rp><rt>ji</rt><rp>)</rp>
+    </ruby>
+    <hr>
+
+    <!--section tag-->
+    <b>section tag elements\</b>
+    <section>
+        <h1>Welcome to Our Website</h1>
+        <p>Welcome and thank you for taking the time to visit our website.</p>
+    </section>
+    <hr>
+
+    <!--small, strong tag elements-->
+    <b>small, strong tag element</b>
+    <p>It's <small>small <small>smaller <small>smallest</small></small></small></p>
+    <p><strong>Warning!</strong> This is <strong>very dangerous</strong></p>
+    <hr>
+
+    <!--sub,sup tags-->
+    <b>sub, sup tag elements</b>
+    <p>The chemical formula of Water is: H<sub>2</sub>O</p>
+    <p>The equation of mass-energy equivalence is: E=mc<sup>2</sup></p>
+    <hr>
+
+   
+
+    <!--table tags-->
+    <b>Example of table tags</b>
+    <p><button type="button" onclick="showStudents();">Show Students</button><p></p>
+    <table id="studentsTable" >
+        <tbody>
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Copyright &copy;  2015 Tutorial Republic</td>
+                </tr>
+            </tfoot>
+            
+            <tr>
+                <td>1</td>
+                <td>John Carter</td>
+                <td>johncarter@mail.com</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Peter Parker</td>
+                <td>peterparker@mail.com</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>John Rambo</td>
+                <td>johnrambo@mail.com</td>
+            </tr>   
+        </tbody>
+        
+    </table>
+    <template id="studentRow">
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </template>
+    <hr>
+
+    <!--var tags-->
+    <b>var tag elements</b>
+    <p>A simple equation: <var>x</var> = <var>y</var> + 2 </p>
+
+    <!--vide tags-->
+    <h2>example of video tags</h2>
+    <video controls="controls">
+        <source src="https://static.videezy.com/system/resources/previews/000/024/935/original/4k-stop-road-panel-background-with-glith-effects.mp4" type="video/mp4" width="50ox"  height="500px">
+    
+        Your browser does not support the HTML5 Video element.
+    </video>
+    <hr> 
+
+     <!--svg tag-->
+     <p>svg tag elements</p>
+     <svg width="500" height="350">
+         <rect x="100" y="100" width="300" height="150" fill="yellow" stroke="black" stroke-width="5"/>
+     </svg>
+    <hr>
+
+</body>
+</html>
